@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kblog</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <nav>
+      <div class="container">
+        <% if session[:user_id] %>
+          <div class="logout" id="logout"><%= link_to 'Logout', logout_path, method: :delete %></div>
+          <div class="newpost"><%= link_to 'New Post', new_post_path %></div>
+        <% end %>
+        <div class="action"><%= link_to 'Blogs', posts_path %></div>
+        <div class="action"><%= link_to 'Par mums', "#" %></div>
+        <div class="action"><%= link_to 'Kontakti', "#" %></div>
+        <div class="action"><%= link_to 'Kebabu tops', "#" %></div>
+      </div>
+    </nav>
+    <%= yield %>
+  </body>
+</html>

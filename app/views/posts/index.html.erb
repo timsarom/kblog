@@ -1,0 +1,21 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Kebabblog</h1>
+
+<head>
+  <title>Kebabblog</title>
+</head>
+<body>
+  <div class="post">
+    <% @posts.each do |post| %>
+        <h2 class="title"><%= post.title %></h2>
+        <p class="description"><%= post.description %></p>
+        <div class="image"><%= image_tag(post.image) %></div>
+        <div class="date">Post created <%= post.created_at.strftime("%F %H:%M") %></div>
+        <br>
+        <br>
+    <% end %>
+    HEllo! world!
+  </div>
+</body>
+<br>
