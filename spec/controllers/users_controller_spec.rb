@@ -36,25 +36,38 @@ RSpec.describe UsersController, type: :controller do
   # This should return the minimal set of values that should be in the session
   # in order to pass any filters (e.g. authentication) defined in
   # UsersController. Be sure to keep this updated too.
-  let(:valid_session) { {} }
+  let(:valid_session) { { user_id: 1 } }
+  let(:invalid_session) { { user_id: 55} }
 
-  describe "GET #index" do
-    it "gets users index page" do
-      get :index, params: {}, session: valid_session
-      expect(response).to be_successful
-    end
-  end
+    describe "GET #index" do
+      context "with valid session" do
+        it "gets users index page" do
+          user = User.create! valid_attributes
+          get :index, params: {id: user.to_param}, session: valid_session
+          expect(response).to be_successful
+        end
+      end
 
-  describe "GET #show" do
-    it "opens user show page" do
-      user = User.create! valid_attributes
-      get :show, params: {id: user.to_param}, session: valid_session
-      expect(response).to be_successful
+      context "with invalid session" do
+        it "gets users index page" do
+          user = User.create! valid_attributes
+          get :index, params: {id: user.to_param}, session: invalid_session
+          expect(response).to redirect_to(login_url)
+        end
+      end
     end
-  end
+
+    describe "GET #show" do
+      it "opens user show page" do
+        user = User.create! valid_attributes
+        get :show, params: {id: user.to_param}, session: valid_session
+        expect(response).to be_successful
+      end
+    end
 
   describe "GET #new" do
     it "opens new user page" do
+      user = User.create! valid_attributes
       get :new, params: {}, session: valid_session
       expect(response).to be_successful
     end

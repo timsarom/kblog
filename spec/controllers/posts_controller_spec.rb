@@ -29,7 +29,7 @@ RSpec.describe PostsController, type: :controller do
   # Post. As you add validations to Post, be sure to
   # adjust the attributes here as well.
   let(:valid_attributes) { { title: 'post', description: 'text text text', image: fixture_file_upload(Rails.root.join('spec', 'fixtures', 'file', 'image.jpg')) } }
-
+ 
   let(:invalid_attributes) { { title: 'post2', description: '', image: fixture_file_upload(Rails.root.join('spec', 'fixtures', 'file', 'image.jpg')) } }
 
   # This should return the minimal set of values that should be in the session
@@ -54,7 +54,7 @@ RSpec.describe PostsController, type: :controller do
 
   describe "GET #new" do
     it "returns new post page" do
-      get :new, params: {}, session: valid_session
+      get :new
       expect(response).to be_successful
     end
   end
