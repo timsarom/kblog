@@ -1,0 +1,6 @@
+<h3><%= comment.name %></h3>
+
+<p><%= comment.text %></p>
+<% if session[:user_id] %>
+	<%= link_to 'Destroy', [comment.post, comment], method: :delete %>
+<% end %>
