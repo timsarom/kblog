@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/home/timsarom/Desktop/blog/spec/controllers/admin_controller_spec.rb": [
+      "/home/timsarom/Desktop/blog/spec/controllers/about_controller_spec.rb": [
         1,
         null,
         1,
@@ -278,17 +278,25 @@
       "/home/timsarom/Desktop/blog/config/routes.rb": [
         1,
         1,
-        null,
-        1,
-        1,
         1,
         1,
         null,
-        null,
+        1,
         1,
         1,
         1,
         null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        null
+      ],
+      "/home/timsarom/Desktop/blog/app/helpers/about_helper.rb": [
+        1,
         null
       ],
       "/home/timsarom/Desktop/blog/app/helpers/admin_helper.rb": [
@@ -296,6 +304,10 @@
         null
       ],
       "/home/timsarom/Desktop/blog/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/home/timsarom/Desktop/blog/app/helpers/comments_helper.rb": [
         1,
         null
       ],
@@ -311,10 +323,8 @@
         1,
         null
       ],
-      "/home/timsarom/Desktop/blog/app/controllers/admin_controller.rb": [
+      "/home/timsarom/Desktop/blog/app/controllers/about_controller.rb": [
         1,
-        1,
-        null,
         1,
         null,
         null
@@ -330,6 +340,60 @@
         10,
         1,
         null,
+        null,
+        null
+      ],
+      "/home/timsarom/Desktop/blog/spec/controllers/admin_controller_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/home/timsarom/Desktop/blog/app/controllers/admin_controller.rb": [
+        1,
+        1,
+        null,
+        1,
+        null,
+        null
+      ],
+      "/home/timsarom/Desktop/blog/spec/controllers/comments_controller_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        null
+      ],
+      "/home/timsarom/Desktop/blog/app/controllers/comments_controller.rb": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
+        null,
+        null,
+        1,
+        null,
+        1,
+        0,
         null,
         null
       ],
@@ -852,6 +916,23 @@
         null,
         null
       ],
+      "/home/timsarom/Desktop/blog/spec/helpers/about_helper_spec.rb": [
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        null
+      ],
       "/home/timsarom/Desktop/blog/spec/helpers/admin_helper_spec.rb": [
         1,
         null,
@@ -868,6 +949,23 @@
         null,
         null,
         null,
+        null
+      ],
+      "/home/timsarom/Desktop/blog/spec/helpers/comments_helper_spec.rb": [
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
         null
       ],
       "/home/timsarom/Desktop/blog/spec/helpers/posts_helper_spec.rb": [
@@ -922,6 +1020,26 @@
         null,
         null,
         null,
+        null
+      ],
+      "/home/timsarom/Desktop/blog/spec/models/comment_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        null
+      ],
+      "/home/timsarom/Desktop/blog/app/models/comment.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "/home/timsarom/Desktop/blog/app/models/application_record.rb": [
+        1,
+        1,
         null
       ],
       "/home/timsarom/Desktop/blog/spec/models/post_spec.rb": [
@@ -1040,6 +1158,13 @@
         1,
         null,
         null,
+        null
+      ],
+      "/home/timsarom/Desktop/blog/spec/views/about/index.html.erb_spec.rb": [
+        1,
+        null,
+        1,
+        1,
         null
       ],
       "/home/timsarom/Desktop/blog/spec/views/admin/index.html.erb_spec.rb": [
@@ -1252,12 +1377,8 @@
         null,
         null
       ],
-      "/home/timsarom/Desktop/blog/app/models/application_record.rb": [
-        1,
-        1,
-        null
-      ],
       "/home/timsarom/Desktop/blog/app/models/post.rb": [
+        1,
         1,
         1,
         1,
@@ -1271,6 +1392,6 @@
         null
       ]
     },
-    "timestamp": 1548181606
+    "timestamp": 1548256819
   }
 }

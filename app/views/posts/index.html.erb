@@ -10,7 +10,7 @@
     <% @posts.each do |post| %>
         <h2 class="title"><%= post.title %></h2>
         <p class="description"><%= post.description %></p>
-        <div class="image"><%= image_tag(post.image) %></div>
+        <div class="image"><%= link_to image_tag(post.image), post %></div>
         <div class="date">Post created <%= post.created_at.strftime("%F %H:%M") %></div>
         <br>
         <br>
