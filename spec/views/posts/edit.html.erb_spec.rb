@@ -4,8 +4,8 @@ RSpec.describe "posts/edit", type: :view do
   before(:each) do
     @post = assign(:post, Post.create!(
       :title => "MyString",
-      :description => "MyText",
-      :image => fixture_file_upload(Rails.root.join('spec', 'fixtures', 'file', 'image.jpg'))
+      :description => "MyTextMyText",
+      :thumbnail => fixture_file_upload(Rails.root.join('spec', 'fixtures', 'file', 'image.jpg'))
     ))
   end
 

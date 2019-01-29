@@ -28,9 +28,9 @@ RSpec.describe PostsController, type: :controller do
   # This should return the minimal set of attributes required to create a valid
   # Post. As you add validations to Post, be sure to
   # adjust the attributes here as well.
-  let(:valid_attributes) { { title: 'post', description: 'text text text', image: fixture_file_upload(Rails.root.join('spec', 'fixtures', 'file', 'image.jpg')) } }
+  let(:valid_attributes) { { title: 'postt', description: 'text text text', thumbnail: fixture_file_upload(Rails.root.join('spec', 'fixtures', 'file', 'image.jpg')) } }
  
-  let(:invalid_attributes) { { title: 'post2', description: '', image: fixture_file_upload(Rails.root.join('spec', 'fixtures', 'file', 'image.jpg')) } }
+  let(:invalid_attributes) { { title: 'post2', description: '', thumbnail: fixture_file_upload(Rails.root.join('spec', 'fixtures', 'file', 'image.jpg')) } }
 
   # This should return the minimal set of values that should be in the session
   # in order to pass any filters (e.g. authentication) defined in
@@ -91,7 +91,7 @@ RSpec.describe PostsController, type: :controller do
 
   describe "PUT #update" do
     context "with valid params" do
-      let(:new_attributes) { { title: 'pos1', description: 'text text text', image: fixture_file_upload(Rails.root.join('spec', 'fixtures', 'file', 'image.jpg')) } }
+      let(:new_attributes) { { title: 'post1', description: 'text text text', thumbnail: fixture_file_upload(Rails.root.join('spec', 'fixtures', 'file', 'image.jpg')) } }
 
       it "updates the requested post" do
         post = Post.create! valid_attributes

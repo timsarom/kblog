@@ -12,13 +12,18 @@
   <% end %>
 
   <div class="field">
+    <%= form.label :thumbnail %>
+    <%= form.file_field :thumbnail %>
+  </div>
+
+  <div class="field">
     <%= form.label :title %>
     <%= form.text_field :title, id: :post_title %>
   </div>
 
   <div class="field">
-    <%= form.label :image %>
-    <%= form.file_field :image, id: :post_image %>
+    <%= form.label :images %>
+    <%= form.file_field :images, multiple: true %>
   </div>
 
   <div class="field">

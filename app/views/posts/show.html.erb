@@ -6,7 +6,9 @@
 </p>
 
 <div>
-	<%= image_tag(@post.image) %>
+	<% @post.images.each do |image| %>
+		<%= image_tag(image) %>
+	<% end %>
 </div>
 
 <p>
@@ -14,10 +16,13 @@
   <%= @post.description %>
 </p>
 
-<%= link_to 'Edit', edit_post_path(@post) %> |
+<% if session[:user_id] %>
+	<%= link_to 'Edit', edit_post_path(@post) %>
+<% end %>
+
 <%= link_to 'Back', posts_path %>
 
-<h3><%= @post.comments.count %> Comments</h3>
+<h3><%= pluralize(@post.comments.count, 'Comment') %></h3>
 
 <%= render @post.comments.reverse %>
 <br>

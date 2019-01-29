@@ -5,13 +5,13 @@ RSpec.describe "posts/index", type: :view do
     assign(:posts, [
       Post.create!(
         :title => "Title",
-        :description => "MyText",
-        :image => fixture_file_upload(Rails.root.join('spec', 'fixtures', 'file', 'image.jpg'))
+        :description => "MyTextMyText",
+        :thumbnail => fixture_file_upload(Rails.root.join('spec', 'fixtures', 'file', 'image.jpg'))
       ),
       Post.create!(
         :title => "Title",
-        :description => "MyText",
-        :image => fixture_file_upload(Rails.root.join('spec', 'fixtures', 'file', 'image.jpg'))
+        :description => "MyTextMyText",
+        :thumbnail => fixture_file_upload(Rails.root.join('spec', 'fixtures', 'file', 'image.jpg'))
       )
     ])
   end
