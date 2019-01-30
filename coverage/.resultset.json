@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/home/timsarom/Desktop/blog/spec/controllers/about_controller_spec.rb": [
+      "c:/Ruby/msys64/home/kblog/spec/controllers/about_controller_spec.rb": [
         1,
         null,
         1,
@@ -15,7 +15,7 @@
         null,
         null
       ],
-      "/home/timsarom/Desktop/blog/spec/rails_helper.rb": [
+      "c:/Ruby/msys64/home/kblog/spec/rails_helper.rb": [
         null,
         1,
         1,
@@ -81,14 +81,14 @@
         1,
         null
       ],
-      "/home/timsarom/Desktop/blog/config/environment.rb": [
+      "c:/Ruby/msys64/home/kblog/config/environment.rb": [
         null,
         1,
         null,
         null,
         1
       ],
-      "/home/timsarom/Desktop/blog/config/application.rb": [
+      "c:/Ruby/msys64/home/kblog/config/application.rb": [
         1,
         null,
         1,
@@ -109,13 +109,13 @@
         null,
         null
       ],
-      "/home/timsarom/Desktop/blog/config/boot.rb": [
+      "c:/Ruby/msys64/home/kblog/config/boot.rb": [
         1,
         null,
         1,
         1
       ],
-      "/home/timsarom/Desktop/blog/config/environments/test.rb": [
+      "c:/Ruby/msys64/home/kblog/config/environments/test.rb": [
         1,
         null,
         null,
@@ -163,7 +163,7 @@
         null,
         null
       ],
-      "/home/timsarom/Desktop/blog/config/initializers/application_controller_renderer.rb": [
+      "c:/Ruby/msys64/home/kblog/config/initializers/application_controller_renderer.rb": [
         null,
         null,
         null,
@@ -173,7 +173,7 @@
         null,
         null
       ],
-      "/home/timsarom/Desktop/blog/config/initializers/assets.rb": [
+      "c:/Ruby/msys64/home/kblog/config/initializers/assets.rb": [
         null,
         null,
         null,
@@ -189,7 +189,7 @@
         null,
         null
       ],
-      "/home/timsarom/Desktop/blog/config/initializers/backtrace_silencers.rb": [
+      "c:/Ruby/msys64/home/kblog/config/initializers/backtrace_silencers.rb": [
         null,
         null,
         null,
@@ -198,7 +198,7 @@
         null,
         null
       ],
-      "/home/timsarom/Desktop/blog/config/initializers/content_security_policy.rb": [
+      "c:/Ruby/msys64/home/kblog/config/initializers/content_security_policy.rb": [
         null,
         null,
         null,
@@ -225,20 +225,20 @@
         null,
         null
       ],
-      "/home/timsarom/Desktop/blog/config/initializers/cookies_serializer.rb": [
+      "c:/Ruby/msys64/home/kblog/config/initializers/cookies_serializer.rb": [
         null,
         null,
         null,
         null,
         1
       ],
-      "/home/timsarom/Desktop/blog/config/initializers/filter_parameter_logging.rb": [
+      "c:/Ruby/msys64/home/kblog/config/initializers/filter_parameter_logging.rb": [
         null,
         null,
         null,
         1
       ],
-      "/home/timsarom/Desktop/blog/config/initializers/inflections.rb": [
+      "c:/Ruby/msys64/home/kblog/config/initializers/inflections.rb": [
         null,
         null,
         null,
@@ -256,13 +256,13 @@
         null,
         null
       ],
-      "/home/timsarom/Desktop/blog/config/initializers/mime_types.rb": [
+      "c:/Ruby/msys64/home/kblog/config/initializers/mime_types.rb": [
         null,
         null,
         null,
         null
       ],
-      "/home/timsarom/Desktop/blog/config/initializers/wrap_parameters.rb": [
+      "c:/Ruby/msys64/home/kblog/config/initializers/wrap_parameters.rb": [
         null,
         null,
         null,
@@ -278,7 +278,7 @@
         null,
         null
       ],
-      "/home/timsarom/Desktop/blog/spec/factories.rb": [
+      "c:/Ruby/msys64/home/kblog/spec/factories.rb": [
         1,
         1,
         1,
@@ -295,7 +295,7 @@
         null,
         null
       ],
-      "/home/timsarom/Desktop/blog/config/routes.rb": [
+      "c:/Ruby/msys64/home/kblog/config/routes.rb": [
         1,
         1,
         1,
@@ -315,41 +315,41 @@
         null,
         null
       ],
-      "/home/timsarom/Desktop/blog/app/helpers/about_helper.rb": [
+      "c:/Ruby/msys64/home/kblog/app/helpers/about_helper.rb": [
         1,
         null
       ],
-      "/home/timsarom/Desktop/blog/app/helpers/admin_helper.rb": [
+      "c:/Ruby/msys64/home/kblog/app/helpers/admin_helper.rb": [
         1,
         null
       ],
-      "/home/timsarom/Desktop/blog/app/helpers/application_helper.rb": [
+      "c:/Ruby/msys64/home/kblog/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/home/timsarom/Desktop/blog/app/helpers/comments_helper.rb": [
+      "c:/Ruby/msys64/home/kblog/app/helpers/comments_helper.rb": [
         1,
         null
       ],
-      "/home/timsarom/Desktop/blog/app/helpers/posts_helper.rb": [
+      "c:/Ruby/msys64/home/kblog/app/helpers/posts_helper.rb": [
         1,
         null
       ],
-      "/home/timsarom/Desktop/blog/app/helpers/sessions_helper.rb": [
+      "c:/Ruby/msys64/home/kblog/app/helpers/sessions_helper.rb": [
         1,
         null
       ],
-      "/home/timsarom/Desktop/blog/app/helpers/users_helper.rb": [
+      "c:/Ruby/msys64/home/kblog/app/helpers/users_helper.rb": [
         1,
         null
       ],
-      "/home/timsarom/Desktop/blog/app/controllers/about_controller.rb": [
+      "c:/Ruby/msys64/home/kblog/app/controllers/about_controller.rb": [
         1,
         1,
         null,
         null
       ],
-      "/home/timsarom/Desktop/blog/app/controllers/application_controller.rb": [
+      "c:/Ruby/msys64/home/kblog/app/controllers/application_controller.rb": [
         1,
         1,
         null,
@@ -363,7 +363,7 @@
         null,
         null
       ],
-      "/home/timsarom/Desktop/blog/spec/controllers/admin_controller_spec.rb": [
+      "c:/Ruby/msys64/home/kblog/spec/controllers/admin_controller_spec.rb": [
         1,
         null,
         1,
@@ -377,7 +377,7 @@
         null,
         null
       ],
-      "/home/timsarom/Desktop/blog/app/controllers/admin_controller.rb": [
+      "c:/Ruby/msys64/home/kblog/app/controllers/admin_controller.rb": [
         1,
         1,
         null,
@@ -385,10 +385,10 @@
         null,
         null
       ],
-      "/home/timsarom/Desktop/blog/spec/controllers/comments_controller_spec.rb": [
+      "c:/Ruby/msys64/home/kblog/spec/controllers/comments_controller_spec.rb": [
 
       ],
-      "/home/timsarom/Desktop/blog/spec/controllers/posts_controller_spec.rb": [
+      "c:/Ruby/msys64/home/kblog/spec/controllers/posts_controller_spec.rb": [
         1,
         null,
         null,
@@ -523,7 +523,7 @@
         null,
         null
       ],
-      "/home/timsarom/Desktop/blog/app/controllers/posts_controller.rb": [
+      "c:/Ruby/msys64/home/kblog/app/controllers/posts_controller.rb": [
         1,
         1,
         1,
@@ -531,7 +531,7 @@
         null,
         null,
         1,
-        2,
+        3,
         null,
         null,
         null,
@@ -591,7 +591,7 @@
         1,
         null,
         1,
-        11,
+        13,
         null,
         null,
         null,
@@ -600,7 +600,7 @@
         null,
         null
       ],
-      "/home/timsarom/Desktop/blog/spec/controllers/sessions_controller_spec.rb": [
+      "c:/Ruby/msys64/home/kblog/spec/controllers/sessions_controller_spec.rb": [
         1,
         null,
         1,
@@ -645,19 +645,19 @@
         null,
         null
       ],
-      "/home/timsarom/Desktop/blog/app/controllers/sessions_controller.rb": [
+      "c:/Ruby/msys64/home/kblog/app/controllers/sessions_controller.rb": [
         1,
         1,
         null,
         null,
         1,
+        4,
+        1,
+        null,
         3,
-        1,
-        null,
+        3,
         2,
         2,
-        1,
-        1,
         null,
         1,
         null,
@@ -670,7 +670,7 @@
         null,
         null
       ],
-      "/home/timsarom/Desktop/blog/spec/controllers/users_controller_spec.rb": [
+      "c:/Ruby/msys64/home/kblog/spec/controllers/users_controller_spec.rb": [
         1,
         null,
         null,
@@ -826,7 +826,7 @@
         null,
         null
       ],
-      "/home/timsarom/Desktop/blog/app/controllers/users_controller.rb": [
+      "c:/Ruby/msys64/home/kblog/app/controllers/users_controller.rb": [
         1,
         1,
         1,
@@ -907,12 +907,13 @@
         null,
         null
       ],
-      "/home/timsarom/Desktop/blog/spec/features/comments_spec.rb": [
+      "c:/Ruby/msys64/home/kblog/spec/features/comments_spec.rb": [
         1,
         null,
         1,
         null,
         4,
+        2,
         null,
         1,
         1,
@@ -949,47 +950,18 @@
         1,
         1,
         1,
-        0,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
         null,
         null,
         null
       ],
-      "/home/timsarom/Desktop/blog/spec/helpers/about_helper_spec.rb": [
-        1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "/home/timsarom/Desktop/blog/spec/helpers/admin_helper_spec.rb": [
-        1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "/home/timsarom/Desktop/blog/spec/helpers/comments_helper_spec.rb": [
+      "c:/Ruby/msys64/home/kblog/spec/helpers/about_helper_spec.rb": [
         1,
         null,
         null,
@@ -1006,7 +978,7 @@
         null,
         null
       ],
-      "/home/timsarom/Desktop/blog/spec/helpers/posts_helper_spec.rb": [
+      "c:/Ruby/msys64/home/kblog/spec/helpers/admin_helper_spec.rb": [
         1,
         null,
         null,
@@ -1024,7 +996,24 @@
         null,
         null
       ],
-      "/home/timsarom/Desktop/blog/spec/helpers/sessions_helper_spec.rb": [
+      "c:/Ruby/msys64/home/kblog/spec/helpers/comments_helper_spec.rb": [
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "c:/Ruby/msys64/home/kblog/spec/helpers/posts_helper_spec.rb": [
         1,
         null,
         null,
@@ -1042,7 +1031,7 @@
         null,
         null
       ],
-      "/home/timsarom/Desktop/blog/spec/helpers/users_helper_spec.rb": [
+      "c:/Ruby/msys64/home/kblog/spec/helpers/sessions_helper_spec.rb": [
         1,
         null,
         null,
@@ -1060,40 +1049,46 @@
         null,
         null
       ],
-      "/home/timsarom/Desktop/blog/spec/models/comment_spec.rb": [
+      "c:/Ruby/msys64/home/kblog/spec/helpers/users_helper_spec.rb": [
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "c:/Ruby/msys64/home/kblog/spec/models/comment_spec.rb": [
         1,
         null,
         null,
         null,
         null
       ],
-      "/home/timsarom/Desktop/blog/spec/models/post_spec.rb": [
+      "c:/Ruby/msys64/home/kblog/spec/models/post_spec.rb": [
         1,
         null,
         null,
         null,
         null
       ],
-      "/home/timsarom/Desktop/blog/spec/models/user_spec.rb": [
+      "c:/Ruby/msys64/home/kblog/spec/models/user_spec.rb": [
         1,
         null,
         null,
         null,
         null
       ],
-      "/home/timsarom/Desktop/blog/spec/requests/posts_spec.rb": [
-        1,
-        null,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        null
-      ],
-      "/home/timsarom/Desktop/blog/spec/requests/users_spec.rb": [
+      "c:/Ruby/msys64/home/kblog/spec/requests/posts_spec.rb": [
         1,
         null,
         1,
@@ -1105,47 +1100,19 @@
         null,
         null
       ],
-      "/home/timsarom/Desktop/blog/spec/routing/posts_routing_spec.rb": [
+      "c:/Ruby/msys64/home/kblog/spec/requests/users_spec.rb": [
         1,
         null,
         1,
         1,
         1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        null,
-        null,
-        null,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        null,
-        null,
         1,
         1,
         null,
         null,
         null
       ],
-      "/home/timsarom/Desktop/blog/spec/routing/users_routing_spec.rb": [
+      "c:/Ruby/msys64/home/kblog/spec/routing/posts_routing_spec.rb": [
         1,
         null,
         1,
@@ -1185,17 +1152,57 @@
         null,
         null
       ],
-      "/home/timsarom/Desktop/blog/spec/views/about/index.html.erb_spec.rb": [
+      "c:/Ruby/msys64/home/kblog/spec/routing/users_routing_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "c:/Ruby/msys64/home/kblog/spec/views/about/index.html.erb_spec.rb": [
         1,
         null,
         null,
         null,
         null
       ],
-      "/home/timsarom/Desktop/blog/spec/views/admin/index.html.erb_spec.rb": [
+      "c:/Ruby/msys64/home/kblog/spec/views/admin/index.html.erb_spec.rb": [
         1
       ],
-      "/home/timsarom/Desktop/blog/spec/views/posts/edit.html.erb_spec.rb": [
+      "c:/Ruby/msys64/home/kblog/spec/views/posts/edit.html.erb_spec.rb": [
         1,
         null,
         1,
@@ -1219,7 +1226,7 @@
         null,
         null
       ],
-      "/home/timsarom/Desktop/blog/spec/views/posts/index.html.erb_spec.rb": [
+      "c:/Ruby/msys64/home/kblog/spec/views/posts/index.html.erb_spec.rb": [
         1,
         null,
         1,
@@ -1244,7 +1251,7 @@
         null,
         null
       ],
-      "/home/timsarom/Desktop/blog/spec/views/posts/new.html.erb_spec.rb": [
+      "c:/Ruby/msys64/home/kblog/spec/views/posts/new.html.erb_spec.rb": [
         1,
         null,
         1,
@@ -1267,7 +1274,7 @@
         null,
         null
       ],
-      "/home/timsarom/Desktop/blog/spec/views/posts/show.html.erb_spec.rb": [
+      "c:/Ruby/msys64/home/kblog/spec/views/posts/show.html.erb_spec.rb": [
         1,
         null,
         1,
@@ -1286,16 +1293,16 @@
         null,
         null
       ],
-      "/home/timsarom/Desktop/blog/spec/views/sessions/create.html.erb_spec.rb": [
+      "c:/Ruby/msys64/home/kblog/spec/views/sessions/create.html.erb_spec.rb": [
         1
       ],
-      "/home/timsarom/Desktop/blog/spec/views/sessions/destroy.html.erb_spec.rb": [
+      "c:/Ruby/msys64/home/kblog/spec/views/sessions/destroy.html.erb_spec.rb": [
         1
       ],
-      "/home/timsarom/Desktop/blog/spec/views/sessions/new.html.erb_spec.rb": [
+      "c:/Ruby/msys64/home/kblog/spec/views/sessions/new.html.erb_spec.rb": [
         1
       ],
-      "/home/timsarom/Desktop/blog/spec/views/users/edit.html.erb_spec.rb": [
+      "c:/Ruby/msys64/home/kblog/spec/views/users/edit.html.erb_spec.rb": [
         1,
         null,
         1,
@@ -1318,7 +1325,7 @@
         null,
         null
       ],
-      "/home/timsarom/Desktop/blog/spec/views/users/index.html.erb_spec.rb": [
+      "c:/Ruby/msys64/home/kblog/spec/views/users/index.html.erb_spec.rb": [
         1,
         null,
         1,
@@ -1342,7 +1349,7 @@
         null,
         null
       ],
-      "/home/timsarom/Desktop/blog/spec/views/users/new.html.erb_spec.rb": [
+      "c:/Ruby/msys64/home/kblog/spec/views/users/new.html.erb_spec.rb": [
         1,
         null,
         1,
@@ -1365,7 +1372,7 @@
         null,
         null
       ],
-      "/home/timsarom/Desktop/blog/spec/views/users/show.html.erb_spec.rb": [
+      "c:/Ruby/msys64/home/kblog/spec/views/users/show.html.erb_spec.rb": [
         1,
         null,
         1,
@@ -1383,7 +1390,7 @@
         null,
         null
       ],
-      "/home/timsarom/Desktop/blog/app/models/user.rb": [
+      "c:/Ruby/msys64/home/kblog/app/models/user.rb": [
         1,
         1,
         1,
@@ -1402,12 +1409,12 @@
         null,
         null
       ],
-      "/home/timsarom/Desktop/blog/app/models/application_record.rb": [
+      "c:/Ruby/msys64/home/kblog/app/models/application_record.rb": [
         1,
         1,
         null
       ],
-      "/home/timsarom/Desktop/blog/app/models/post.rb": [
+      "c:/Ruby/msys64/home/kblog/app/models/post.rb": [
         1,
         1,
         1,
@@ -1424,31 +1431,31 @@
         null,
         null
       ],
-      "/home/timsarom/Desktop/blog/app/models/comment.rb": [
+      "c:/Ruby/msys64/home/kblog/app/models/comment.rb": [
         1,
         1,
         1,
         1,
         null
       ],
-      "/home/timsarom/Desktop/blog/app/controllers/comments_controller.rb": [
+      "c:/Ruby/msys64/home/kblog/app/controllers/comments_controller.rb": [
         1,
         1,
         3,
         3,
         3,
+        1,
+        null,
         2,
         null,
-        1,
-        null,
         null,
         null,
         1,
-        0,
-        0,
-        0,
+        1,
+        1,
+        1,
         null,
-        0,
+        1,
         null,
         null,
         1,
@@ -1459,6 +1466,6 @@
         null
       ]
     },
-    "timestamp": 1548777703
+    "timestamp": 1548842577
   }
 }
