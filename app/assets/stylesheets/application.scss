@@ -36,10 +36,6 @@
 	padding: 50px;
 }
 
-body {
-	width: auto;
-}
-
 .logout {
 	padding: 10px;
 	background-color: blue;
@@ -65,4 +61,8 @@ body {
 	font-weight: bold;
 	right: 130px;
 	position: absolute;
+}
+
+html {
+	background-color: white;
 }

@@ -1,18 +1,17 @@
 <p id="notice"><%= notice %></p>
 
-<h1>kblog</h1>
-
 <head>
   <title>kblog</title>
+  <link href="https://fonts.googleapis.com/css?family=Mukta" rel="stylesheet">
 </head>
 <body>
-  <div class="post">
+  <h1 class="title">Kebab places in Riga<h1>
+  <div class="content">
     <% @posts.each do |post| %>
-        <h2 class="title"><%= post.title %></h2>
+      <div class="post">
+        <div class="post_title"><%= post.title %></div>
         <div class="image"><%= link_to image_tag(post.thumbnail), post %></div>
-        <div class="date">Post created <%= post.created_at.strftime("%F %H:%M") %></div>
-        <br>
-        <br>
+      </div>
     <% end %>
   </div>
 </body>
