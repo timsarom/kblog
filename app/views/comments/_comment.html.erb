@@ -1,6 +1,9 @@
-<h3><%= comment.name %></h3>
+<% if comment.save %>
+	<h3 class="commenter"><%= comment.name %></h3>
+	<div class="comment_text"><%= comment.text %></div>
+	<div class="date">Comment added: <%= comment.created_at.strftime("%F %H:%M") %></div>
+<% end %>
 
-<p><%= comment.text %></p>
 <% if session[:user_id] %>
-	<%= button_to 'Destroy', [comment.post, comment], method: :delete %>
+	<%= button_to 'Delete', [comment.post, comment], method: :delete %>
 <% end %>

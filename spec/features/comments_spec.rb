@@ -45,7 +45,7 @@ RSpec.feature "Comments", type: :feature do
   		fill_in 'Name', with: "Name"
   		fill_in 'Text', with: "komentars"
   		click_button 'Create Comment'
-  		click_button 'Destroy'
+  		click_button 'Delete'
   		expect(page).to have_content('0 Comments')
 	  end
 	end
