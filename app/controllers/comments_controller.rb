@@ -3,6 +3,7 @@ class CommentsController < ApplicationController
 		@post = Post.find(params[:post_id])
 		@comment = @post.comments.create(comment_params)
 		if @comment.errors.any?
+			@anchor = "comments"
 			render 'posts/show'
 		else
 			redirect_to @post

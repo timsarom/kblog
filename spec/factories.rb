@@ -1,4 +1,7 @@
 FactoryBot.define do
+  factory :about do
+    content { "MyText" }
+  end
 	factory :comment do
 		name  { "User" }
 		text  { "bla bla bla bla" }

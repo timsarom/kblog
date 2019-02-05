@@ -29,8 +29,8 @@ RSpec.describe PostsController, type: :controller do
   # Post. As you add validations to Post, be sure to
   # adjust the attributes here as well.
   let(:valid_attributes) { { title: 'postt', description: 'text text text', thumbnail: fixture_file_upload(Rails.root.join('spec', 'fixtures', 'file', 'image.jpg')) } }
- 
-  let(:invalid_attributes) { { title: 'post2', description: '', thumbnail: fixture_file_upload(Rails.root.join('spec', 'fixtures', 'file', 'image.jpg')) } }
+
+  let(:invalid_attributes) { { title: 'post2', description: '', thumbnail: fixture_file_upload(Rails.root.join('spec', 'fixtures', 'file', 'image.jpg')), images: [fixture_file_upload(Rails.root.join('spec', 'fixtures', 'file', 'image.jpg'))] } }
 
   # This should return the minimal set of values that should be in the session
   # in order to pass any filters (e.g. authentication) defined in

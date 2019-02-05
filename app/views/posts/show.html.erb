@@ -3,6 +3,11 @@
 <head>
   <title>kblog</title>
   <link href="https://fonts.googleapis.com/css?family=Mukta" rel="stylesheet">
+  <% if @anchor %>
+  	<script type="text/javascript">
+  		window.location.hash = "<%= @anchor %>";
+  	</script>
+  <% end %>
 </head>
 
 <h1 class="title"><%= @post.title %></h1>
@@ -13,6 +18,9 @@
 			<% @post.images.each do |image| %>
 				<div class="thumbnail">
 					<%= link_to image_tag(image), image %>
+					<% if session[:user_id] %>
+						<%= link_to "Delete", delete_image_post_url(image.id), method: :delete %>
+					<% end %>
 				</div>
 			<% end %>
 	</div>
@@ -27,7 +35,7 @@
 	<div class="action"><%= link_to 'Back', posts_path %></div>
 </div>
 
-<div class="comment_cont">
+<div class="comment_cont", id="comments">
 	<h2 class="title"><%= pluralize(@post.comments.count, 'Comment') %></h2>
 
 	<%= render @post.comments.reverse %>
