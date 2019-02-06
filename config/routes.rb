@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
-  get 'about/index'
   get 'admin' => 'admin#index'
-  get 'about' => 'about#index'
 
   controller :sessions do
   	get 'login' => :new
@@ -9,6 +7,7 @@ Rails.application.routes.draw do
   	delete 'logout' => :destroy
   end
 
+  resources :contacts
   resources :users
   resources :posts do
     resources :comments

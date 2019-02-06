@@ -1,0 +1,9 @@
+<h1>About us</h1>
+
+<% @contacts.each do |contact| %>
+	<%= contact.content %>
+
+	<% if session[:user_id] %>
+		<%= link_to 'Edit', edit_contact_path(contact) %>
+	<% end %>
+<% end %>

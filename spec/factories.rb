@@ -1,4 +1,7 @@
 FactoryBot.define do
+  factory :contact do
+    
+  end
   factory :about do
     content { "MyText" }
   end
