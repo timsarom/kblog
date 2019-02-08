@@ -2,19 +2,26 @@
 
 <head>
   <title>kblog</title>
-  <link href="https://fonts.googleapis.com/css?family=Mukta" rel="stylesheet">
 </head>
 <body>
-  <h1 class="title">Kebab places in Riga<h1>
-  <div class="content">
-    <% @posts.each do |post| %>
-      <div class="post">
-        <div class="post_title"><%= post.title %></div>
-        <% if post.thumbnail.attached? %>
-          <div class="image"><%= link_to image_tag(post.thumbnail), post %></div>
+  <div class="container">
+      <div class="row">
+        <% @posts.each do |post| %>
+          <div class="col">
+            <div class="card text-center">
+              <div class="card" style="width:500px">
+                <% if post.thumbnail.attached? %>
+                  <img class="img-fluid card-img-top" <%= image_tag(post.thumbnail) %></img>
+                <% end %>
+                <div class="card-body">
+                  <h4 class="card-title"><%= post.title %></h4>
+                  <p class="card-text">Adrese utml</p>
+                  <a href="<%= post_path(post) %>" class="btn btn-secondary">More info</a>
+                </div>
+              </div>
+            </div>
+          </div>
         <% end %>
       </div>
-    <% end %>
   </div>
 </body>
-<br>

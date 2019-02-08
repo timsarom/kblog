@@ -12,58 +12,6 @@
  *
  *= require_tree .
  *= require_self
+ *= require rails_bootstrap_forms
  */
 
-.action {
-	padding: 10px;
-	background-color: black;
-	display: inline;
-	border: 2px black;
-	border-radius: 15%;
-	font-weight: bold;
-}
-
-.container {
-	display: block;
-	padding: 0 10%;
-}
-
-.action a {
-	color: white;
-	text-decoration: none;
-}
-
-#logout .action {
-	padding: 50px;
-}
-
-.logout {
-	padding: 10px;
-	background-color: blue;
-	display: inline;
-	border: 2px black solid;
-	border-radius: 15%;
-	font-weight: bold;
-	right: 50px;
-	position: absolute;
-}
-
-.logout a, .newpost a {
-	color: white;
-	text-decoration: none;
-}
-
-.newpost {
-	padding: 10px;
-	background-color: blue;
-	display: inline;
-	border: 2px black solid;
-	border-radius: 15%;
-	font-weight: bold;
-	right: 130px;
-	position: absolute;
-}
-
-html {
-	background-color: white;
-}

@@ -1,8 +1,9 @@
 <% if comment.save %>
-	<h3 class="commenter"><%= comment.name %></h3>
-	<div class="comment_text"><%= comment.text %></div>
-	<div class="date">Comment added: <%= comment.created_at.strftime("%F %H:%M") %></div>
+	<%= comment.name %>
+	<%= comment.text %>
+	Comment added: <%= comment.created_at.strftime("%F %H:%M") %>
 <% end %>
+	<%= link_to "Reply", new_post_comment_path(:post_id => @post.id, :parent_id => comment) %>
 
 <% if session[:user_id] %>
 	<%= button_to 'Delete', [comment.post, comment], method: :delete %>
