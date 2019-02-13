@@ -1,10 +1,11 @@
+<div class="container">
   <div class = "row">
-        <div class="col-md-8 col-md-offset-2 ">
-            <h3>Reply</h3>
-            <ol class ="comments">
-                <%= render @comment.parent if @comment.parent %>
-            </ol>
-        </div>
+    <div class="col">
+      <h3>Reply</h3>
+	      <ol class ="comments">
+	          <%= render @comment.parent if @comment.parent %>
+	      </ol>
     </div>
-
-<%= render 'form' %>
+	</div>
+	<%= render 'form' %>
+</div>

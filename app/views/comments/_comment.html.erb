@@ -1,10 +1,14 @@
-<% if comment.save %>
-	<%= comment.name %>
-	<%= comment.text %>
-	Comment added: <%= comment.created_at.strftime("%F %H:%M") %>
-<% end %>
-	<%= link_to "Reply", new_post_comment_path(:post_id => @post.id, :parent_id => comment) %>
-
-<% if session[:user_id] %>
-	<%= button_to 'Delete', [comment.post, comment], method: :delete %>
-<% end %>
+<div class="card mb-3">
+		<% if comment.save %>
+		<div class="card-header">
+			<strong><%= comment.name %></strong> <span class="text-muted"><%= time_ago_in_words(comment.created_at.strftime("%F %H:%M")) %> ago</span>
+		</div>
+		<div class="card-body">
+			<p class="card-text"><%= comment.text %></p>
+		<% end %>
+			<a href="<%= new_post_comment_path(:post_id => @post.id, :parent_id => comment) %>" class="card-link">Reply</a>
+		<% if session[:user_id] %>
+			<%= link_to 'Delete', [comment.post, comment], method: :delete %>
+		<% end %>
+	</div>
+</div>

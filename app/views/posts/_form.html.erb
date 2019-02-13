@@ -1,4 +1,4 @@
- <%= form_with(model: post, local: true) do |form| %>
+ <%= bootstrap_form_with(model: post, local: true) do |form| %>
   <% if post.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(post.errors.count, "error") %> prohibited this post from being saved:</h2>
@@ -11,32 +11,18 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :thumbnail %>
-    <%= form.file_field :thumbnail %>
+  <%= form.file_field :thumbnail %>
 
-    <% if post.thumbnail.attached? %>
-      <%= form.label :delete_thumbnail %>
-      <%= form.check_box :delete_thumbnail %>
-    <% end %>
-  </div>
+  <% if post.thumbnail.attached? %>
+    <%= form.check_box :delete_thumbnail %>
+  <% end %>
 
-  <div class="field">
-    <%= form.label :title %>
-    <%= form.text_field :title, id: :post_title %>
-  </div>
+  <%= form.text_field :title, id: :post_title %>
 
-  <div class="field">
-    <%= form.label :images %>
-    <%= form.file_field :images, multiple: true %>
-  </div>
+  <%= form.file_field :images, multiple: true %>
 
-  <div class="field">
-    <%= form.label :description %>
-    <%= form.text_area :description, id: :post_description %>
-  </div>
+  <%= form.text_area :description, id: :post_description %>
 
-  <div class="actions">
-    <%= form.submit %>
-  </div>
+  <%= form.submit %>
+
 <% end %>

@@ -1,5 +1,4 @@
-<%= form_with model: @contact do |f| %>
-	<%= f.label :content %>
+<%= bootstrap_form_with model: @contact do |f| %>
 	<%= f.text_field :content, id: :contact_content %>
 	<%= f.submit %>
 <% end %>

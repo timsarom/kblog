@@ -10,11 +10,11 @@
     </div>
   <% end %>
   
-  <%= form.hidden_field :parent_id %>
+  <%= form.hidden_field :parent_id, :value => params[:parent_id] %>
 
   <%= form.text_field :name, id: :comment_name %>
 
-  <%= form.text_area :text, id: :comment_text, rows: 6, cols: 100 %>
+  <%= form.text_area :text, id: :comment_text %>
 
   <%= form.submit %>
   

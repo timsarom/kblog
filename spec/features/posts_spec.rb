@@ -32,11 +32,10 @@ RSpec.feature "Posts", type: :feature do
   		fill_in 'Password', with: 'secret'
   		click_button 'Login'
   		visit post_path(post)
-
-  		within(".image_grid") do
-  			click_link "Delete"
-  		end
-  		page.has_no_selector?('.thumbnail')
+      within(".container .row .col-6 .row .col-6") do
+  		  click_link "Delete"
+      end
+  		page.has_no_selector?('.img-fluid')
   	end
   end
 end
