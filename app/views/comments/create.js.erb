@@ -1,0 +1,4 @@
+$('#comment-<%= @comment.parent_id %>').after('<%= j render @comment %>');
+$('.new_comment').first().hide();
+$('#comment_list').html('<%= j render @post %>');
+$('.comment_form').html('<%= j render 'form' %>');

@@ -1,0 +1,7 @@
+var $comment_form = $("<%= j render 'form', post: @post, comment: @comment %>");
+
+$(document).ready(() => {
+	$('.card-link').on('click', event => {
+		$(event.currentTarget).closest('.card-body').append($comment_form);
+	});
+});

@@ -16,6 +16,10 @@ class PostsController < ApplicationController
   # GET /posts/new
   def new
     @post = Post.new
+    respond_to do |format|
+      format.html
+      format.js
+    end
   end
 
   # GET /posts/1/edit

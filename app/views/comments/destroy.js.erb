@@ -1,0 +1,5 @@
+$('.delete').bind('ajax:success', function() {
+	$('#comment-<%= @comment.id %>').fadeOut();
+	$('#comment-<%= @comment.id %>').next('.nested_comments').fadeOut();
+	$('#comment_list').html('<%= j render @post %>');
+});
