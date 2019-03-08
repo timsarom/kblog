@@ -1,0 +1,51 @@
+<div class="container">
+	<h2> Kebabu topa liste </h2>
+	<table class="table">
+		<% @posts.each do |post| %>
+		<thead class="thead-dark" data-toggle="collapse" data-target="#post-<%= post.id %>">
+			<tr>
+				<th><%= post.title %></th>
+				<th><%= post.score %></th>
+			</tr>
+		</thead>
+		<tbody id="post-<%= post.id %>" class="collapse">
+			<tr>
+				<td>Meat taste: </td>
+				<td><%= post.meat_taste %></td>
+			</tr>
+			<tr>
+				<td>Variety of salads: </td>
+				<td><%= post.variety_of_salads %></td>
+			</tr>
+			<tr>
+				<td>Spiciness: </td>
+				<td><%= post.spiciness %></td>
+			</tr>
+			<tr>
+				<td>Satiety: </td>
+				<td><%= post.satiety %></td>
+			</tr>
+			<tr>
+				<td>Cleanliness: </td>
+				<td><%= post.cleanliness %></td>
+			</tr>
+			<tr>
+				<td>Service: </td>
+				<td><%= post.service %></td>
+			</tr>
+		</tbody>
+		<% end %>
+	</ol>
+	</table>
+</div>
+
+<script type="text/javascript">
+	$(function () {
+    var i = 0;
+    $('table tbody tr').prepend('<td>•</td>');
+    $('table thead tr').each(function () {
+        i += 1;
+        $(this).prepend('<th>' + i + '</th>');
+    });
+	});
+</script>

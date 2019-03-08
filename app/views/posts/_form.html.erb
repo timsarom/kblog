@@ -13,15 +13,23 @@
 
   <%= form.file_field :thumbnail %>
 
-  <% if post.thumbnail.attached? %>
-    <%= form.check_box :delete_thumbnail %>
-  <% end %>
-
   <%= form.text_field :title, id: :post_title %>
 
   <%= form.file_field :images, multiple: true %>
 
   <%= form.text_area :description, id: :post_description %>
+
+  <%= form.select(:meat_taste, options_for_select([1, 2, 3, 4, 5, 6, 7], :selected => @post.meat_taste )) %>
+
+  <%= form.select(:variety_of_salads, options_for_select([1, 2, 3, 4, 5, 6, 7], :selected => @post.variety_of_salads )) %>
+
+  <%= form.select(:spiciness, options_for_select([1, 2, 3, 4, 5, 6, 7], :selected => @post.spiciness )) %>
+
+  <%= form.select(:satiety, options_for_select([1, 2, 3, 4, 5, 6, 7], :selected => @post.satiety )) %>
+
+  <%= form.select(:cleanliness, options_for_select([1, 2, 3, 4, 5, 6, 7], :selected => @post.cleanliness )) %>
+
+  <%= form.select(:service, options_for_select([1, 2, 3, 4, 5, 6, 7], :selected => @post.service )) %>
 
   <%= form.submit %>
 

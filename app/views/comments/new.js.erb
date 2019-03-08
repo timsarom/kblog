@@ -4,4 +4,8 @@ $(document).ready(() => {
 	$('.card-link').on('click', event => {
 		$(event.currentTarget).closest('.card-body').append($comment_form);
 	});
+	$('.close').on('click', event => {
+		$(event.currentTarget).next('.new_comment').hide();
+		$(event.currentTarget).hide();
+	});
 });

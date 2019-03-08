@@ -9,14 +9,15 @@ class Post < ApplicationRecord
 	validates :description, length: { minimum: 10 }
 	validate :image_exists
 
+	def score
+		score = (meat_taste + variety_of_salads + spiciness + satiety + cleanliness + service) / 6.0
+		"%g" % ("%.1f" % score)
+	end
+
   private
 
   def image_exists
     errors.add(:base, 'Please upload your image.') unless thumbnail.attached?
-  end
-
-  def purge_thumbnail
-  	thumbnail.purge_later
   end
 
 end

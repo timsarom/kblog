@@ -17,3 +17,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require jquery.turbolinks
+
+$('.thead-dark').on('click', function() {
+	$('#tabula').show();
+})

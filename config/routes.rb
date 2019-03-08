@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   get 'admin' => 'admin#index'
-
+  get 'top' => 'posts#kebab_top'
+  
   controller :sessions do
   	get 'login' => :new
   	post 'login' => :create

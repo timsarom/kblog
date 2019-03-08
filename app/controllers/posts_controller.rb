@@ -66,10 +66,8 @@ class PostsController < ApplicationController
     end
   end
 
-  def delete_image
-    attachment = ActiveStorage::Attachment.find(params[:id])
-    attachment.purge_later
-    redirect_back(fallback_location: posts_path)
+  def kebab_top
+    @posts = Post.all.sort{|a,b| b.score <=> a.score}
   end
 
   private
@@ -80,6 +78,6 @@ class PostsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def post_params
-      params.require(:post).permit(:title, :delete_thumbnail, :description, :thumbnail, images: [])
+      params.require(:post).permit(:title, :description, :thumbnail, :meat_taste, :variety_of_salads, :spiciness, :satiety, :cleanliness, :service, images: [])
     end
 end
