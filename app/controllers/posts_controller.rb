@@ -1,11 +1,11 @@
 class PostsController < ApplicationController
   before_action :set_post, only: [:show, :edit, :update, :destroy]
-  before_action :authorize, only: [:edit, :update, :destroy, :create, :new, :delete_upload]
+  before_action :authorize, only: [:edit, :update, :destroy, :create, :new, :delete_image]
 
   # GET /posts
   # GET /posts.json
   def index
-    @posts = Post.order(created_at: :desc)
+    @posts = Post.all.sort{|a,b| b.score <=> a.score}
   end
 
   # GET /posts/1
@@ -66,8 +66,15 @@ class PostsController < ApplicationController
     end
   end
 
+  def delete_image
+    attachment = ActiveStorage::Attachment.find(params[:id])
+    attachment.purge_later
+    redirect_back(fallback_location: posts_path)
+  end
+
   def kebab_top
     @posts = Post.all.sort{|a,b| b.score <=> a.score}
+    @last_update = Post.order("updated_at").last.updated_at
   end
 
   private

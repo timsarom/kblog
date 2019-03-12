@@ -1,51 +1,42 @@
 <div class="container">
-	<h2> Kebabu topa liste </h2>
-	<table class="table">
+</br>
+	<h1 class="text-center">Kebab top overview</h1></br>
+	<table class="table table-hover">
 		<% @posts.each do |post| %>
 		<thead class="thead-dark" data-toggle="collapse" data-target="#post-<%= post.id %>">
 			<tr>
 				<th><%= post.title %></th>
-				<th><%= post.score %></th>
+				<th><%= post.score %> / 7</th>
 			</tr>
 		</thead>
-		<tbody id="post-<%= post.id %>" class="collapse">
+		<tbody id="post-<%= post.id %>" class="collapse font-weight-bold">
 			<tr>
 				<td>Meat taste: </td>
-				<td><%= post.meat_taste %></td>
+				<td><%= post.meat_taste %> / 7</td>
 			</tr>
 			<tr>
-				<td>Variety of salads: </td>
-				<td><%= post.variety_of_salads %></td>
+				<td>Variety of salads in kebab: </td>
+				<td><%= post.variety_of_salads %> / 7</td>
 			</tr>
 			<tr>
-				<td>Spiciness: </td>
-				<td><%= post.spiciness %></td>
+				<td>Satiety feeling after eating: </td>
+				<td><%= post.satiety %> / 7</td>
 			</tr>
 			<tr>
-				<td>Satiety: </td>
-				<td><%= post.satiety %></td>
+				<td>Kebab place cleanliness: </td>
+				<td><%= post.cleanliness %> / 7</td>
 			</tr>
 			<tr>
-				<td>Cleanliness: </td>
-				<td><%= post.cleanliness %></td>
+				<td>Service rating: </td>
+				<td><%= post.service %> / 7</td>
 			</tr>
 			<tr>
-				<td>Service: </td>
-				<td><%= post.service %></td>
+				<td>Kebab spiciness: </td>
+				<td><%= post.spiciness %> / 7</td>
 			</tr>
 		</tbody>
 		<% end %>
 	</ol>
 	</table>
+	<p class="font-weight-bold text-danger">Last update: <%= @last_update.strftime("%F") %>
 </div>
-
-<script type="text/javascript">
-	$(function () {
-    var i = 0;
-    $('table tbody tr').prepend('<td>•</td>');
-    $('table thead tr').each(function () {
-        i += 1;
-        $(this).prepend('<th>' + i + '</th>');
-    });
-	});
-</script>

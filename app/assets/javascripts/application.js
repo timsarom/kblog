@@ -14,10 +14,16 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+//= require lightbox
 //= require jquery
 //= require jquery_ujs
 //= require jquery.turbolinks
 
-$('.thead-dark').on('click', function() {
-	$('#tabula').show();
-})
+$(function () {
+    var i = 0;
+    $('table tbody tr').prepend('<td>•</td>');
+    $('table thead tr').each(function () {
+        i += 1;
+        $(this).prepend('<th>' + i + '</th>');
+    });
+});

@@ -10,7 +10,7 @@ class Post < ApplicationRecord
 	validate :image_exists
 
 	def score
-		score = (meat_taste + variety_of_salads + spiciness + satiety + cleanliness + service) / 6.0
+		score = (meat_taste + variety_of_salads + satiety + cleanliness + service) / 5.0
 		"%g" % ("%.1f" % score)
 	end
 

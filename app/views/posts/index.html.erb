@@ -8,16 +8,12 @@
       <div class="row">
         <% @posts.each do |post| %>
           <div class="col">
-            <div class="card text-center">
-              <div class="card" style="width:500px">
-                <% if post.thumbnail.attached? %>
-                  <img class="img-fluid card-img-top" <%= image_tag(post.thumbnail) %></img>
-                <% end %>
-                <div class="card-body">
-                  <h4 class="card-title"><%= post.title %></h4>
-                  <p class="card-text">Adrese utml</p>
-                  <a href="<%= post_path(post) %>" class="btn btn-secondary">More info</a>
-                </div>
+            <div class="card mx-auto" style="width: 500px">
+                <img class="img-fluid card-img-top" <%= image_tag(post.thumbnail) %></img>
+              <div class="card-body text-center">
+                <h4 class="card-title"><%= post.title %></h4>
+                <p class="card-text font-weight-bold text-danger">Score: <%= post.score %> / 7</p>
+                <a href="<%= post_path(post) %>" class="btn btn-secondary">More info</a>
               </div>
             </div>
           </div>
